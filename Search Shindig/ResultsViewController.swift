@@ -10,6 +10,7 @@ import UIKit
 
 class ResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
     @IBOutlet weak var resultsTableView: UITableView!
 
     
@@ -21,13 +22,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         if tags != "" {
             getPhotoList()
-            tags = ""
-            loadTable()
         }
     }
-
-    
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -44,48 +40,29 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
             
             let photo:PhotoModel = photos[indexPath.row]
             
-            let photoUrlString = "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_s.jpg"
+            let photoUrl = URL(string: "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_s.jpg")
             
-            print(photoUrlString)
-            
-            let Url = URL(string: photoUrlString)!
-            
-            let session = URLSession(configuration: .default)
-
-            let downloadPicTask = session.dataTask(with: Url) { (data, response, error) in
-                // The download has finished.
-                if let e = error {
-                    print("Error downloading picture: \(e)")
-                } else {
-                    // No errors found.
-
-                    if let res = response as? HTTPURLResponse {
-                        print("Downloaded picture with response code \(res.statusCode)")
-                        if let imageData = data {
-
-                            let image = UIImage(data: imageData)
-                            
-                            cell.cellImageView.image = image
-                        } else {
-                            print("Couldn't get image: Image is nil")
-                        }
-                    } else {
-                        print("Couldn't get response code for some reason")
-                    }
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: photoUrl!)
+                DispatchQueue.main.async {
+                    cell.cellImageView.image = UIImage(data: data!)
                 }
             }
             
-            downloadPicTask.resume()
-            
             cell.label.text = photo.getTitle()
-            
-            //need an image here
-    //        downloadImage(url: , imageView: nil)
         }
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let photoView = self.storyboard?.instantiateViewController(withIdentifier: "photo") as! PhotoViewController
+        
+        let photo:PhotoModel = photos[indexPath.row]
+        
+        photoView.photoUrlString = "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_c.jpg"
+        
+        self.present(photoView,animated: true, completion: nil)
     }
     
     func loadTable() {
@@ -103,25 +80,6 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     //====================== API Functions====================
-    func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
-        URLSession.shared.dataTask(with: url) {
-            (data, response, error) in
-            completion(data, response, error)
-            }.resume()
-    }
-    
-    func downloadImage(url: URL, imageView: UIImageView) {
-        print("Download Started")
-        getDataFromUrl(url: url) { (data, response, error)  in
-            guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
-            DispatchQueue.main.async() { () -> Void in
-                imageView.image = UIImage(data: data)
-            }
-        }
-    }
-    
     func getURL(tags: String) -> String{
         let formattedTags = tags.replacingOccurrences(of: " ", with: "+")
         
@@ -174,8 +132,19 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
                         self.loadTable()
                     }
                 } else {
-                    //need to alert user that tags yielded no results
+                    
+                    let alert = UIAlertController(title: "Uh-Oh", message: "Your search has yielded no results.", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                        
+                        let searchView = self.storyboard?.instantiateViewController(withIdentifier: "search") as! ResultsViewController
+                        
+                        self.present(searchView,animated: true, completion: nil)
+                    }))
+                    
+                    self.present(alert, animated: true, completion: nil)
                 }
+                
                 print(photoArray)
                 
             } else {

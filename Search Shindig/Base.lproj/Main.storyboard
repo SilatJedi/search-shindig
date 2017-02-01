@@ -264,6 +264,9 @@
                             <constraint firstItem="SYM-Xn-Hgm" firstAttribute="top" secondItem="v7H-Ea-jJ7" secondAttribute="bottom" constant="20" id="vtE-uk-Uab"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="v7H-Ea-jJ7" id="Rkq-kY-unA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAS-m8-UGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
