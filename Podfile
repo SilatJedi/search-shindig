@@ -7,8 +7,6 @@ target 'Search Shindig' do
 
   # Pods for Search Shindig
 
-pod 'RealmSwift'
-
   target 'Search ShindigTests' do
     inherit! :search_paths
     # Pods for testing
