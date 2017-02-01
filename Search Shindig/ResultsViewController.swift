@@ -20,7 +20,14 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if tags != "" {
+        if UserDefaults.standard.string(forKey: "tags") == nil {
+            
+            UserDefaults.standard.setValue(tags, forKey: "tags")
+            
+            getPhotoList()
+        } else {
+            tags = UserDefaults.standard.string(forKey: "tags")!
+            
             getPhotoList()
         }
     }
@@ -56,13 +63,15 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let photoView = self.storyboard?.instantiateViewController(withIdentifier: "photo") as! PhotoViewController
-        
-        let photo:PhotoModel = photos[indexPath.row]
-        
-        photoView.photoUrlString = "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_c.jpg"
-        
-        self.present(photoView,animated: true, completion: nil)
+        if photos.count > 0 {
+            let photoView = self.storyboard?.instantiateViewController(withIdentifier: "photo") as! PhotoViewController
+            
+            let photo:PhotoModel = photos[indexPath.row]
+            
+            photoView.photoUrlString = "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_c.jpg"
+            
+            self.present(photoView,animated: true, completion: nil)
+        }
     }
     
     func loadTable() {

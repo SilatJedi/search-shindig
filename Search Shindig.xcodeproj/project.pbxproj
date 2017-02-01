@@ -110,11 +110,11 @@
 				BA01B1421E41C0C3004F4078 /* PhotoModel.swift */,
 				BA01B13C1E419D50004F4078 /* PhotoViewController.swift */,
 				BA01B13A1E419D36004F4078 /* ResultsViewController.swift */,
+				0D71CCAD1E4288A7000C1794 /* ResultsTableViewCell.swift */,
 				BA01B1381E419CEA004F4078 /* SearchViewController.swift */,
 				BA01B1111E416260004F4078 /* Assets.xcassets */,
 				BA01B10E1E416260004F4078 /* Main.storyboard */,
 				BA01B1401E41A3ED004F4078 /* Splash.storyboard */,
-				0D71CCAD1E4288A7000C1794 /* ResultsTableViewCell.swift */,
 			);
 			path = "Search Shindig";
 			sourceTree = "<group>";

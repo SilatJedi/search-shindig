@@ -31,7 +31,14 @@ class SearchViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+     
+        for key in Array(UserDefaults.standard.dictionaryRepresentation().keys) {
+            UserDefaults.standard.removeObject(forKey: key)
+        }
+        
+    }
     
     //dismiss soft keyboard when touch happens outside of a textfield
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {        self.view.endEditing(true)
