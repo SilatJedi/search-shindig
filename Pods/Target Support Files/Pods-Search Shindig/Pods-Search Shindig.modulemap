@@ -1,6 +1,0 @@
-framework module Pods_Search_Shindig {
-  umbrella header "Pods-Search Shindig-umbrella.h"
-
-  export *
-  module * { export * }
-}
