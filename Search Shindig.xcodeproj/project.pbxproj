@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA01B10B1E416260004F4078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B10A1E416260004F4078 /* AppDelegate.swift */; };
+		BA01B10D1E416260004F4078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B10C1E416260004F4078 /* ViewController.swift */; };
+		BA01B1101E416260004F4078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01B10E1E416260004F4078 /* Main.storyboard */; };
+		BA01B1121E416260004F4078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA01B1111E416260004F4078 /* Assets.xcassets */; };
+		BA01B1151E416260004F4078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01B1131E416260004F4078 /* LaunchScreen.storyboard */; };
+		BA01B1201E416260004F4078 /* Search_ShindigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B11F1E416260004F4078 /* Search_ShindigTests.swift */; };
+		BA01B12B1E416260004F4078 /* Search_ShindigUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B12A1E416260004F4078 /* Search_ShindigUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA01B11C1E416260004F4078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA01B0FF1E41625F004F4078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA01B1061E41625F004F4078;
+			remoteInfo = "Search Shindig";
+		};
+		BA01B1271E416260004F4078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA01B0FF1E41625F004F4078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA01B1061E41625F004F4078;
+			remoteInfo = "Search Shindig";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA01B1071E41625F004F4078 /* Search Shindig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search Shindig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA01B10A1E416260004F4078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA01B10C1E416260004F4078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA01B10F1E416260004F4078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA01B1111E416260004F4078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA01B1141E416260004F4078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA01B1161E416260004F4078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA01B11B1E416260004F4078 /* Search ShindigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Search ShindigTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA01B11F1E416260004F4078 /* Search_ShindigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_ShindigTests.swift; sourceTree = "<group>"; };
+		BA01B1211E416260004F4078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA01B1261E416260004F4078 /* Search ShindigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Search ShindigUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA01B12A1E416260004F4078 /* Search_ShindigUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_ShindigUITests.swift; sourceTree = "<group>"; };
+		BA01B12C1E416260004F4078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA01B1041E41625F004F4078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA01B1181E416260004F4078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA01B1231E416260004F4078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA01B0FE1E41625F004F4078 = {
+			isa = PBXGroup;
+			children = (
+				BA01B1091E41625F004F4078 /* Search Shindig */,
+				BA01B11E1E416260004F4078 /* Search ShindigTests */,
+				BA01B1291E416260004F4078 /* Search ShindigUITests */,
+				BA01B1081E41625F004F4078 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA01B1081E41625F004F4078 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA01B1071E41625F004F4078 /* Search Shindig.app */,
+				BA01B11B1E416260004F4078 /* Search ShindigTests.xctest */,
+				BA01B1261E416260004F4078 /* Search ShindigUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA01B1091E41625F004F4078 /* Search Shindig */ = {
+			isa = PBXGroup;
+			children = (
+				BA01B10A1E416260004F4078 /* AppDelegate.swift */,
+				BA01B10C1E416260004F4078 /* ViewController.swift */,
+				BA01B10E1E416260004F4078 /* Main.storyboard */,
+				BA01B1111E416260004F4078 /* Assets.xcassets */,
+				BA01B1131E416260004F4078 /* LaunchScreen.storyboard */,
+				BA01B1161E416260004F4078 /* Info.plist */,
+			);
+			path = "Search Shindig";
+			sourceTree = "<group>";
+		};
+		BA01B11E1E416260004F4078 /* Search ShindigTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA01B11F1E416260004F4078 /* Search_ShindigTests.swift */,
+				BA01B1211E416260004F4078 /* Info.plist */,
+			);
+			path = "Search ShindigTests";
+			sourceTree = "<group>";
+		};
+		BA01B1291E416260004F4078 /* Search ShindigUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA01B12A1E416260004F4078 /* Search_ShindigUITests.swift */,
+				BA01B12C1E416260004F4078 /* Info.plist */,
+			);
+			path = "Search ShindigUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA01B1061E41625F004F4078 /* Search Shindig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA01B12F1E416260004F4078 /* Build configuration list for PBXNativeTarget "Search Shindig" */;
+			buildPhases = (
+				BA01B1031E41625F004F4078 /* Sources */,
+				BA01B1041E41625F004F4078 /* Frameworks */,
+				BA01B1051E41625F004F4078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Search Shindig";
+			productName = "Search Shindig";
+			productReference = BA01B1071E41625F004F4078 /* Search Shindig.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA01B11A1E416260004F4078 /* Search ShindigTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA01B1321E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigTests" */;
+			buildPhases = (
+				BA01B1171E416260004F4078 /* Sources */,
+				BA01B1181E416260004F4078 /* Frameworks */,
+				BA01B1191E416260004F4078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA01B11D1E416260004F4078 /* PBXTargetDependency */,
+			);
+			name = "Search ShindigTests";
+			productName = "Search ShindigTests";
+			productReference = BA01B11B1E416260004F4078 /* Search ShindigTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA01B1251E416260004F4078 /* Search ShindigUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA01B1351E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigUITests" */;
+			buildPhases = (
+				BA01B1221E416260004F4078 /* Sources */,
+				BA01B1231E416260004F4078 /* Frameworks */,
+				BA01B1241E416260004F4078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA01B1281E416260004F4078 /* PBXTargetDependency */,
+			);
+			name = "Search ShindigUITests";
+			productName = "Search ShindigUITests";
+			productReference = BA01B1261E416260004F4078 /* Search ShindigUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA01B0FF1E41625F004F4078 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "James Anderson";
+				TargetAttributes = {
+					BA01B1061E41625F004F4078 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36P4KR6VMU;
+						ProvisioningStyle = Automatic;
+					};
+					BA01B11A1E416260004F4078 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36P4KR6VMU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA01B1061E41625F004F4078;
+					};
+					BA01B1251E416260004F4078 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36P4KR6VMU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA01B1061E41625F004F4078;
+					};
+				};
+			};
+			buildConfigurationList = BA01B1021E41625F004F4078 /* Build configuration list for PBXProject "Search Shindig" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA01B0FE1E41625F004F4078;
+			productRefGroup = BA01B1081E41625F004F4078 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA01B1061E41625F004F4078 /* Search Shindig */,
+				BA01B11A1E416260004F4078 /* Search ShindigTests */,
+				BA01B1251E416260004F4078 /* Search ShindigUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA01B1051E41625F004F4078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA01B1151E416260004F4078 /* LaunchScreen.storyboard in Resources */,
+				BA01B1121E416260004F4078 /* Assets.xcassets in Resources */,
+				BA01B1101E416260004F4078 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA01B1191E416260004F4078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA01B1241E416260004F4078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA01B1031E41625F004F4078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA01B10D1E416260004F4078 /* ViewController.swift in Sources */,
+				BA01B10B1E416260004F4078 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA01B1171E416260004F4078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA01B1201E416260004F4078 /* Search_ShindigTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA01B1221E416260004F4078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA01B12B1E416260004F4078 /* Search_ShindigUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA01B11D1E416260004F4078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA01B1061E41625F004F4078 /* Search Shindig */;
+			targetProxy = BA01B11C1E416260004F4078 /* PBXContainerItemProxy */;
+		};
+		BA01B1281E416260004F4078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA01B1061E41625F004F4078 /* Search Shindig */;
+			targetProxy = BA01B1271E416260004F4078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA01B10E1E416260004F4078 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA01B10F1E416260004F4078 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA01B1131E416260004F4078 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA01B1141E416260004F4078 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA01B12D1E416260004F4078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA01B12E1E416260004F4078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA01B1301E416260004F4078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				INFOPLIST_FILE = "Search Shindig/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-Shindig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BA01B1311E416260004F4078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				INFOPLIST_FILE = "Search Shindig/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-Shindig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BA01B1331E416260004F4078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				INFOPLIST_FILE = "Search ShindigTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-ShindigTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Search Shindig.app/Search Shindig";
+			};
+			name = Debug;
+		};
+		BA01B1341E416260004F4078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				INFOPLIST_FILE = "Search ShindigTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-ShindigTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Search Shindig.app/Search Shindig";
+			};
+			name = Release;
+		};
+		BA01B1361E416260004F4078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				INFOPLIST_FILE = "Search ShindigUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-ShindigUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Search Shindig";
+			};
+			name = Debug;
+		};
+		BA01B1371E416260004F4078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				INFOPLIST_FILE = "Search ShindigUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-ShindigUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Search Shindig";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA01B1021E41625F004F4078 /* Build configuration list for PBXProject "Search Shindig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA01B12D1E416260004F4078 /* Debug */,
+				BA01B12E1E416260004F4078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA01B12F1E416260004F4078 /* Build configuration list for PBXNativeTarget "Search Shindig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA01B1301E416260004F4078 /* Debug */,
+				BA01B1311E416260004F4078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA01B1321E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA01B1331E416260004F4078 /* Debug */,
+				BA01B1341E416260004F4078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA01B1351E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA01B1361E416260004F4078 /* Debug */,
+				BA01B1371E416260004F4078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA01B0FF1E41625F004F4078 /* Project object */;
+}
