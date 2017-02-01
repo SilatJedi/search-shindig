@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5083808B36DF066C2C68B29D /* Pods_Search_Shindig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0DCF610F35B7A3A9EFF5AA /* Pods_Search_Shindig.framework */; };
+		7C1AD65D4747A60ACA3D1AAE /* Pods_Search_ShindigUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A1220D1475C32D5524C549 /* Pods_Search_ShindigUITests.framework */; };
 		BA01B10B1E416260004F4078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B10A1E416260004F4078 /* AppDelegate.swift */; };
-		BA01B10D1E416260004F4078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B10C1E416260004F4078 /* ViewController.swift */; };
 		BA01B1101E416260004F4078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01B10E1E416260004F4078 /* Main.storyboard */; };
 		BA01B1121E416260004F4078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA01B1111E416260004F4078 /* Assets.xcassets */; };
-		BA01B1151E416260004F4078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01B1131E416260004F4078 /* LaunchScreen.storyboard */; };
 		BA01B1201E416260004F4078 /* Search_ShindigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B11F1E416260004F4078 /* Search_ShindigTests.swift */; };
 		BA01B12B1E416260004F4078 /* Search_ShindigUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B12A1E416260004F4078 /* Search_ShindigUITests.swift */; };
+		BA01B1391E419CEA004F4078 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B1381E419CEA004F4078 /* SearchViewController.swift */; };
+		BA01B13B1E419D36004F4078 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B13A1E419D36004F4078 /* ResultsViewController.swift */; };
+		BA01B13D1E419D51004F4078 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B13C1E419D50004F4078 /* PhotoViewController.swift */; };
+		BA01B1411E41A3ED004F4078 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01B1401E41A3ED004F4078 /* Splash.storyboard */; };
+		BA01B1431E41C0C3004F4078 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B1421E41C0C3004F4078 /* PhotoModel.swift */; };
+		F809EE0C048534159C61EAA9 /* Pods_Search_ShindigTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AF2D16F5A084E361667F90 /* Pods_Search_ShindigTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E0DCF610F35B7A3A9EFF5AA /* Pods_Search_Shindig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_Shindig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A1220D1475C32D5524C549 /* Pods_Search_ShindigUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_ShindigUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E08DA7A0CEE22D9632CDB6 /* Pods-Search Shindig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search Shindig.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Search Shindig/Pods-Search Shindig.debug.xcconfig"; sourceTree = "<group>"; };
+		5D920532B3977CBE4E48F9D4 /* Pods-Search ShindigTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search ShindigTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Search ShindigTests/Pods-Search ShindigTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9243D5907C35683798F4C1E /* Pods-Search Shindig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search Shindig.release.xcconfig"; path = "Pods/Target Support Files/Pods-Search Shindig/Pods-Search Shindig.release.xcconfig"; sourceTree = "<group>"; };
 		BA01B1071E41625F004F4078 /* Search Shindig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search Shindig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA01B10A1E416260004F4078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA01B10C1E416260004F4078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA01B10F1E416260004F4078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA01B1111E416260004F4078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA01B1141E416260004F4078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA01B1161E416260004F4078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA01B11B1E416260004F4078 /* Search ShindigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Search ShindigTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA01B11F1E416260004F4078 /* Search_ShindigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_ShindigTests.swift; sourceTree = "<group>"; };
@@ -47,6 +56,15 @@
 		BA01B1261E416260004F4078 /* Search ShindigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Search ShindigUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA01B12A1E416260004F4078 /* Search_ShindigUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_ShindigUITests.swift; sourceTree = "<group>"; };
 		BA01B12C1E416260004F4078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA01B1381E419CEA004F4078 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BA01B13A1E419D36004F4078 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		BA01B13C1E419D50004F4078 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		BA01B1401E41A3ED004F4078 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		BA01B1421E41C0C3004F4078 /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		BA76D1ED3E709D80B0CB289F /* Pods-Search ShindigTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search ShindigTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Search ShindigTests/Pods-Search ShindigTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6AF2D16F5A084E361667F90 /* Pods_Search_ShindigTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_ShindigTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB577BD8A8ADDC52B31565C0 /* Pods-Search ShindigUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search ShindigUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Search ShindigUITests/Pods-Search ShindigUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F353D3346F5637B37D242D54 /* Pods-Search ShindigUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search ShindigUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Search ShindigUITests/Pods-Search ShindigUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5083808B36DF066C2C68B29D /* Pods_Search_Shindig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F809EE0C048534159C61EAA9 /* Pods_Search_ShindigTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1AD65D4747A60ACA3D1AAE /* Pods_Search_ShindigUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4583FD42B0A90B7407A3E822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E0DCF610F35B7A3A9EFF5AA /* Pods_Search_Shindig.framework */,
+				D6AF2D16F5A084E361667F90 /* Pods_Search_ShindigTests.framework */,
+				43A1220D1475C32D5524C549 /* Pods_Search_ShindigUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA01B0FE1E41625F004F4078 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +112,8 @@
 				BA01B11E1E416260004F4078 /* Search ShindigTests */,
 				BA01B1291E416260004F4078 /* Search ShindigUITests */,
 				BA01B1081E41625F004F4078 /* Products */,
+				D5837448024FF58B7D7F268D /* Pods */,
+				4583FD42B0A90B7407A3E822 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +130,15 @@
 		BA01B1091E41625F004F4078 /* Search Shindig */ = {
 			isa = PBXGroup;
 			children = (
-				BA01B10A1E416260004F4078 /* AppDelegate.swift */,
-				BA01B10C1E416260004F4078 /* ViewController.swift */,
-				BA01B10E1E416260004F4078 /* Main.storyboard */,
-				BA01B1111E416260004F4078 /* Assets.xcassets */,
-				BA01B1131E416260004F4078 /* LaunchScreen.storyboard */,
 				BA01B1161E416260004F4078 /* Info.plist */,
+				BA01B10A1E416260004F4078 /* AppDelegate.swift */,
+				BA01B1421E41C0C3004F4078 /* PhotoModel.swift */,
+				BA01B13C1E419D50004F4078 /* PhotoViewController.swift */,
+				BA01B13A1E419D36004F4078 /* ResultsViewController.swift */,
+				BA01B1381E419CEA004F4078 /* SearchViewController.swift */,
+				BA01B1111E416260004F4078 /* Assets.xcassets */,
+				BA01B10E1E416260004F4078 /* Main.storyboard */,
+				BA01B1401E41A3ED004F4078 /* Splash.storyboard */,
 			);
 			path = "Search Shindig";
 			sourceTree = "<group>";
@@ -125,6 +161,19 @@
 			path = "Search ShindigUITests";
 			sourceTree = "<group>";
 		};
+		D5837448024FF58B7D7F268D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54E08DA7A0CEE22D9632CDB6 /* Pods-Search Shindig.debug.xcconfig */,
+				B9243D5907C35683798F4C1E /* Pods-Search Shindig.release.xcconfig */,
+				BA76D1ED3E709D80B0CB289F /* Pods-Search ShindigTests.debug.xcconfig */,
+				5D920532B3977CBE4E48F9D4 /* Pods-Search ShindigTests.release.xcconfig */,
+				EB577BD8A8ADDC52B31565C0 /* Pods-Search ShindigUITests.debug.xcconfig */,
+				F353D3346F5637B37D242D54 /* Pods-Search ShindigUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA01B12F1E416260004F4078 /* Build configuration list for PBXNativeTarget "Search Shindig" */;
 			buildPhases = (
+				A4C90BA9DBF617BC500CA613 /* [CP] Check Pods Manifest.lock */,
 				BA01B1031E41625F004F4078 /* Sources */,
 				BA01B1041E41625F004F4078 /* Frameworks */,
 				BA01B1051E41625F004F4078 /* Resources */,
+				5B24C83D26BE50C2EE119874 /* [CP] Embed Pods Frameworks */,
+				E1EFB0812E9FA295E3200440 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA01B1321E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigTests" */;
 			buildPhases = (
+				F95BCA56E3814ADC4AF3D50A /* [CP] Check Pods Manifest.lock */,
 				BA01B1171E416260004F4078 /* Sources */,
 				BA01B1181E416260004F4078 /* Frameworks */,
 				BA01B1191E416260004F4078 /* Resources */,
+				8494FB25521B674AF154A477 /* [CP] Embed Pods Frameworks */,
+				6937A99986DC1122D0DFC36C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA01B1351E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigUITests" */;
 			buildPhases = (
+				970DE6550E7C75A99E2654F8 /* [CP] Check Pods Manifest.lock */,
 				BA01B1221E416260004F4078 /* Sources */,
 				BA01B1231E416260004F4078 /* Frameworks */,
 				BA01B1241E416260004F4078 /* Resources */,
+				4BB71B51F061B4CBCD35C1C4 /* [CP] Embed Pods Frameworks */,
+				FDFCE2C79A51ECFA3D74FF31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +251,6 @@
 				TargetAttributes = {
 					BA01B1061E41625F004F4078 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 36P4KR6VMU;
 						ProvisioningStyle = Automatic;
 					};
 					BA01B11A1E416260004F4078 = {
@@ -235,9 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA01B1151E416260004F4078 /* LaunchScreen.storyboard in Resources */,
 				BA01B1121E416260004F4078 /* Assets.xcassets in Resources */,
 				BA01B1101E416260004F4078 /* Main.storyboard in Resources */,
+				BA01B1411E41A3ED004F4078 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +314,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BB71B51F061B4CBCD35C1C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search ShindigUITests/Pods-Search ShindigUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B24C83D26BE50C2EE119874 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search Shindig/Pods-Search Shindig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6937A99986DC1122D0DFC36C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search ShindigTests/Pods-Search ShindigTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8494FB25521B674AF154A477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search ShindigTests/Pods-Search ShindigTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		970DE6550E7C75A99E2654F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C90BA9DBF617BC500CA613 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1EFB0812E9FA295E3200440 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search Shindig/Pods-Search Shindig-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F95BCA56E3814ADC4AF3D50A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFCE2C79A51ECFA3D74FF31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search ShindigUITests/Pods-Search ShindigUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA01B1031E41625F004F4078 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA01B10D1E416260004F4078 /* ViewController.swift in Sources */,
+				BA01B1391E419CEA004F4078 /* SearchViewController.swift in Sources */,
+				BA01B13D1E419D51004F4078 /* PhotoViewController.swift in Sources */,
 				BA01B10B1E416260004F4078 /* AppDelegate.swift in Sources */,
+				BA01B1431E41C0C3004F4078 /* PhotoModel.swift in Sources */,
+				BA01B13B1E419D36004F4078 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +503,6 @@
 				BA01B10F1E416260004F4078 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BA01B1131E416260004F4078 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA01B1141E416260004F4078 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,12 +603,13 @@
 		};
 		BA01B1301E416260004F4078 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E08DA7A0CEE22D9632CDB6 /* Pods-Search Shindig.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Search Shindig/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-Shindig";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.search-shindig";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -426,12 +617,13 @@
 		};
 		BA01B1311E416260004F4078 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9243D5907C35683798F4C1E /* Pods-Search Shindig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36P4KR6VMU;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Search Shindig/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.Search-Shindig";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.silatsaktistudio.search-shindig";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -439,6 +631,7 @@
 		};
 		BA01B1331E416260004F4078 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA76D1ED3E709D80B0CB289F /* Pods-Search ShindigTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +647,7 @@
 		};
 		BA01B1341E416260004F4078 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D920532B3977CBE4E48F9D4 /* Pods-Search ShindigTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +663,7 @@
 		};
 		BA01B1361E416260004F4078 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB577BD8A8ADDC52B31565C0 /* Pods-Search ShindigUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 36P4KR6VMU;
@@ -483,6 +678,7 @@
 		};
 		BA01B1371E416260004F4078 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F353D3346F5637B37D242D54 /* Pods-Search ShindigUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 36P4KR6VMU;
@@ -514,6 +710,7 @@
 				BA01B1311E416260004F4078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA01B1321E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +719,7 @@
 				BA01B1341E416260004F4078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA01B1351E416260004F4078 /* Build configuration list for PBXNativeTarget "Search ShindigUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +728,7 @@
 				BA01B1371E416260004F4078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
