@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D71CCAE1E4288A7000C1794 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CCAD1E4288A7000C1794 /* ResultsTableViewCell.swift */; };
 		BA01B10B1E416260004F4078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01B10A1E416260004F4078 /* AppDelegate.swift */; };
 		BA01B1101E416260004F4078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01B10E1E416260004F4078 /* Main.storyboard */; };
 		BA01B1121E416260004F4078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA01B1111E416260004F4078 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D71CCAD1E4288A7000C1794 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		BA01B1071E41625F004F4078 /* Search Shindig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search Shindig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA01B10A1E416260004F4078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA01B10F1E416260004F4078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				BA01B1111E416260004F4078 /* Assets.xcassets */,
 				BA01B10E1E416260004F4078 /* Main.storyboard */,
 				BA01B1401E41A3ED004F4078 /* Splash.storyboard */,
+				0D71CCAD1E4288A7000C1794 /* ResultsTableViewCell.swift */,
 			);
 			path = "Search Shindig";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D71CCAE1E4288A7000C1794 /* ResultsTableViewCell.swift in Sources */,
 				BA01B1391E419CEA004F4078 /* SearchViewController.swift in Sources */,
 				BA01B13D1E419D51004F4078 /* PhotoViewController.swift in Sources */,
 				BA01B10B1E416260004F4078 /* AppDelegate.swift in Sources */,

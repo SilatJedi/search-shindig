@@ -10,7 +10,8 @@ import UIKit
 
 class ResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var resultsTableView: UITableView!
+
     
     var tags:String = ""
     var photos = [PhotoModel]()
@@ -20,6 +21,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         if tags != "" {
             getPhotoList()
+            tags = ""
+            loadTable()
         }
     }
 
@@ -35,22 +38,59 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ResultsTableViewCell
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        
-        
-        //need an image here
-//        downloadImage(url: , imageView: nil)
+        if photos.count > 0 {
+            
+            let photo:PhotoModel = photos[indexPath.row]
+            
+            let photoUrlString = "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_s.jpg"
+            
+            print(photoUrlString)
+            
+            let Url = URL(string: photoUrlString)!
+            
+            let session = URLSession(configuration: .default)
+
+            let downloadPicTask = session.dataTask(with: Url) { (data, response, error) in
+                // The download has finished.
+                if let e = error {
+                    print("Error downloading picture: \(e)")
+                } else {
+                    // No errors found.
+
+                    if let res = response as? HTTPURLResponse {
+                        print("Downloaded picture with response code \(res.statusCode)")
+                        if let imageData = data {
+
+                            let image = UIImage(data: imageData)
+                            
+                            cell.cellImageView.image = image
+                        } else {
+                            print("Couldn't get image: Image is nil")
+                        }
+                    } else {
+                        print("Couldn't get response code for some reason")
+                    }
+                }
+            }
+            
+            downloadPicTask.resume()
+            
+            cell.label.text = photo.getTitle()
+            
+            //need an image here
+    //        downloadImage(url: , imageView: nil)
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
     
-    func load_table() {
+    func loadTable() {
         DispatchQueue.main.async(execute: {
-            self.tableView.reloadData()
+            self.resultsTableView.reloadData()
             return
         })
     }
@@ -85,7 +125,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     func getURL(tags: String) -> String{
         let formattedTags = tags.replacingOccurrences(of: " ", with: "+")
         
-        let url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=1dd17dde0fed7286935d83875fcc17dd&tags=" + formattedTags + "&per_page=25&format=json&nojsoncallback=1&content_type=1"
+        let url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=1dd17dde0fed7286935d83875fcc17dd&per_page=25&format=json&nojsoncallback=1&content_type=1&tags=" + formattedTags
         
         return url
     }
@@ -124,14 +164,14 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
                         self.photos.append(
                             PhotoModel(
                                 photoId: photoDict.value(forKey: "id") as! String,
-                                farmId: photoDict.value(forKey: "farm") as! String,
+                                farmId: photoDict.value(forKey: "farm") as! Int,
                                 serverId: photoDict.value(forKey: "server") as! String,
-                                secret: photoDict.value(forKey: "secret") as! String
+                                secret: photoDict.value(forKey: "secret") as! String,
+                                title: photoDict.value(forKey: "title") as! String
                             )
                         )
                         
-                        
-                        
+                        self.loadTable()
                     }
                 } else {
                     //need to alert user that tags yielded no results

@@ -9,16 +9,18 @@
 import Foundation
 
 class PhotoModel {
-    fileprivate var farmId = String()
+    fileprivate var farmId = Int()
     fileprivate var serverId = String()
     fileprivate var photoId = String()
     fileprivate var secret = String()
+    fileprivate var title = String()
     
-    init(photoId: String, farmId: String, serverId: String, secret: String) {
+    init(photoId: String, farmId: Int, serverId: String, secret: String, title: String) {
         self.photoId = photoId
         self.farmId = farmId
         self.serverId = serverId
         self.secret = secret
+        self.title = title
     }
     
     func getPhotoId() -> String {
@@ -26,7 +28,7 @@ class PhotoModel {
     }
     
     func getFarmId() -> String {
-        return farmId
+        return "\(farmId)"
     }
     
     func getServerId() -> String {
@@ -35,5 +37,9 @@ class PhotoModel {
     
     func getSecret() -> String {
         return secret
+    }
+    
+    func getTitle() -> String {
+        return title
     }
 }

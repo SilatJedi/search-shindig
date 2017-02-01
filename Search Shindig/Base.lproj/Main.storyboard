@@ -137,11 +137,11 @@
                                 <rect key="frame" x="16" y="119" width="288" height="341"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="gHZ-g5-f6P">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="gHZ-g5-f6P" customClass="ResultsTableViewCell" customModule="Search_Shindig" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="288" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gHZ-g5-f6P" id="gRK-af-9N0">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0an-Hb-W1e">
@@ -168,8 +168,16 @@
                                                 <constraint firstItem="mpd-XT-djz" firstAttribute="top" secondItem="0an-Hb-W1e" secondAttribute="top" constant="-1" id="wrm-va-Gcl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImageView" destination="0an-Hb-W1e" id="IOU-yl-BXk"/>
+                                            <outlet property="label" destination="mpd-XT-djz" id="S5U-H5-dub"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kXi-Dc-lCw" id="O1j-DB-kgE"/>
+                                    <outlet property="delegate" destination="kXi-Dc-lCw" id="02g-fT-ez0"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on a list item to to enlarge photo." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ew-As-cpd">
                                 <rect key="frame" x="16" y="90" width="288" height="21"/>
@@ -202,7 +210,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="CMd-SB-wX0" id="eF7-Wc-MMK"/>
+                        <outlet property="resultsTableView" destination="CMd-SB-wX0" id="MOb-pU-uhp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azM-Nc-uS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
