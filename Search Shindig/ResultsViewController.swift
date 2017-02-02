@@ -21,6 +21,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var tags:String = ""
     var photos = [PhotoModel]()
+    let apiKey = "1dd17dde0fed7286935d83875fcc17dd"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,7 +94,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     func getURL(tags: String) -> String{
         let formattedTags = tags.replacingOccurrences(of: " ", with: "+")
         
-        let url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=1dd17dde0fed7286935d83875fcc17dd&per_page=25&format=json&nojsoncallback=1&content_type=1&tags=" + formattedTags
+        let url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(apiKey)&per_page=25&format=json&nojsoncallback=1&content_type=1&tags=\(formattedTags)"
         
         return url
     }
