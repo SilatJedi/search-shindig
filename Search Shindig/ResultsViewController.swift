@@ -10,26 +10,21 @@ import UIKit
 
 class ResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var photoView: UIView!
     
+    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var resultsTableView: UITableView!
 
+    @IBAction func hidePhotoView(_ sender: Any) {
+        photoView.isHidden = true
+    }
     
     var tags:String = ""
     var photos = [PhotoModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if UserDefaults.standard.string(forKey: "tags") == nil {
-            
-            UserDefaults.standard.setValue(tags, forKey: "tags")
-            
-            getPhotoList()
-        } else {
-            tags = UserDefaults.standard.string(forKey: "tags")!
-            
-            getPhotoList()
-        }
+        getPhotoList()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,7 +32,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 25
+        return photos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,13 +59,19 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if photos.count > 0 {
-            let photoView = self.storyboard?.instantiateViewController(withIdentifier: "photo") as! PhotoViewController
-            
             let photo:PhotoModel = photos[indexPath.row]
+
+            let photoUrlString = "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_c.jpg"
             
-            photoView.photoUrlString = "https://farm\(photo.getFarmId()).staticflickr.com/\(photo.getServerId())/\(photo.getPhotoId())_\(photo.getSecret())_c.jpg"
+            let photoUrl = URL(string: photoUrlString)
             
-            self.present(photoView,animated: true, completion: nil)
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: photoUrl!)
+                DispatchQueue.main.async {
+                    self.photoImageView.image = UIImage(data: data!)
+                    self.photoView.isHidden = false
+                }
+            }
         }
     }
     
