@@ -148,7 +148,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
                     
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                         
-                        let searchView = self.storyboard?.instantiateViewController(withIdentifier: "search") as! ResultsViewController
+                        let searchView = self.storyboard?.instantiateViewController(withIdentifier: "search") as! SearchViewController
                         
                         self.present(searchView,animated: true, completion: nil)
                     }))
